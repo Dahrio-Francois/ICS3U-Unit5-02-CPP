@@ -1,6 +1,6 @@
 // Copyright (c) 2022 St. Mother Teresa HS All rights reserved.
 //
-// Created by: Andrew
+// Created by: Dahrio-Francois
 // Created on: May 2022
 // This program calculates the area of a triangle
 
@@ -17,7 +17,7 @@ void CalculateArea(int base, int height) {
     std::cout << "The area is " << area << " cm²" << std::endl;
 }
 
-main() {
+int main() {
     // this function gets length and width
 
     std::string baseAsString;
@@ -40,6 +40,7 @@ main() {
         // call functions
         CalculateArea(baseFromUser, heightFromUser);
     } catch (std::invalid_argument) {
-        std::cout << "\nPlease enter an integer" << std::endl;
+        std::cout << "\nThis was not an integer, please enter an integer."
+        << std::endl;
     }
 }
